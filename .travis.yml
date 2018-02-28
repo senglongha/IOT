@@ -1,0 +1,15 @@
+language: java
+sudo: false
+install: true
+addons: 
+  sonarcloud:
+    organization: "kitswdevteam-github"
+    token:
+       secure: "bxETu4qmVI0Ouk+Mi2VKC4mqGmv0v+LhbFO00siP13eiOPgI1f5xxU/XBMRB+TU92XktqqbvU8uZ/ZW/9jgpi4/LedcNUa+RQLIZN5UGFhLKglpvrFnwVdN1hG41fPnzG3fmqPgLLqWRTekPzE9hnGKmxxK9AzCh+MJxbK2nkYlHdkAjFh4Sh8pWGBgc8bVebyB9BTPs/jkQjT5gmod/kqqfPJf5Ghd+947+znuqeQCES8kO1d8jFtJMpVhHbe06NOjR7qZtsJIRAD8pa0RFhl0kYvzB8eECIoDS31dmV2DeP1AMfsPBk9SGT3CX3WVLLtND3kWXF/op/Tj1TLtMxMcWH1IrFaEWMIYANVflOrCnOisjlLNLLeeftbX8ORAgVK4iUhehwJdPh8XxIkm4iEGGSVWXTDOPkzNJd0bxywxhZy5wjuXsoDKjmQqq+vxBshIQDZ4vbMvV7WVcCfN1rlLwW7MDZsq2NLT6ZzSGkWjjNyJkOcTFYeGyzx7L0b4qIuTTMpmhX6049nbT+Oz5KfTomOo7V0YMMS0tnt2SlGkeIbMn910/zxI+Cw3rQK1CX5wdRNVR88TEB2IvfbdMsFa7Zkxc79UVaKSa9SuKNXRvhGjvJIo6lvtcNu04Kk67HBnrl3mr6h8nmaG9xkn1qp9onNSYomO0GwBgVQF/wyc="
+jdk:
+  - oraclejdk8
+script:
+cache:
+  directories:
+  - '$HOME?.m2/repository'
+  - '$HOME/.sonar/cache'       
